@@ -10,12 +10,18 @@ module.exports = function SkipCutscene(dispatch) {
 	try {
 		const Command = require('command')
 		const command = Command(dispatch)
+		// NA
 		command.add('skip', () => {
 			enable = !enable
-			send(` : Skip Cutscene ${enable ? '<font color="#56B4E9">enabled</font>' : '<font color="#E69F00">disabled</font>'}.`)
+			send(`${enable ? '<font color="#56B4E9">enabled</font>' : '<font color="#E69F00">disabled</font>'}<font>.</font>`)
+		})
+		// KR
+		command.add('스킵', () => {
+			enable = !enable
+			send(`${enable ? '<font color="#56B4E9">실행</font>' : '<font color="#E69F00">중지</font>'}<font>되었습니다.</font>`)
 		})
 		function send(msg) {
-			command.message(`<font color="#FFFFFF">` + msg + `</font>`)
+			command.message(`[skip-cutscene] : ` + msg)
 		}
 	} catch (e) {
 		console.log(`[ERROR] -- Skip Cutscene module --`)
