@@ -1,6 +1,8 @@
-skip-cutscenes
---------------
+# skip-cutscene
+tera-proxy module to automatically skip cutscenes
 
-No more mashing Esc after killing a boss. Pretend cutscenes don't even exist.
+## Dependency
+`Command` module
 
-Don't forget to turn this off for new content if you want to watch it.
+## Usage
+Toggle : `skip`
