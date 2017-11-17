@@ -31,8 +31,7 @@ module.exports = function SkipCutscene(dispatch) {
 	dispatch.hook('S_PLAY_MOVIE', (event) => {
 		if (enable) {
 			//console.log(`[skip-cutscene] : Video id : ` + event.movie)
-			dispatch.toServer('C_END_MOVIE', Object.assign({ unk: true }, event))
-			return false
+			dispatch.toServer('C_END_MOVIE', { unk: true })
 		}
 	})
 
