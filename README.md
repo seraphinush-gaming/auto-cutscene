@@ -5,4 +5,16 @@ tera-proxy module to automatically skip cutscenes
 - `Command` module
 
 ## Usage
-- Toggle : `skip`
+### `skip`
+### `스킵`
+- Toggle on/off
+- Default is on
+
+## Info
+- Author : [baldera-mods](https://github.com/baldera-mods)
+
+## Changelog
+### 1.1
+- Updated code
+### 1.0
+- Initial fork
