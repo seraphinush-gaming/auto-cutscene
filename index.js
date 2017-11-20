@@ -2,6 +2,8 @@
 // - C_END_MOVIE
 // - S_PLAY_MOVIE
 
+// Version 1.2 r:00
+
 module.exports = function SkipCutscene(dispatch) {
 
 	let enable = true
@@ -31,7 +33,10 @@ module.exports = function SkipCutscene(dispatch) {
 	dispatch.hook('S_PLAY_MOVIE', (event) => {
 		if (enable) {
 			//console.log(`[skip-cutscene] : Video id : ` + event.movie)
-			dispatch.toServer('C_END_MOVIE', { unk: true })
+			dispatch.toServer('C_END_MOVIE', { 
+				movie: event.movie,
+				unk: 1 
+			})
 		}
 	})
 
