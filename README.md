@@ -14,6 +14,8 @@ tera-proxy module to automatically skip cutscenes
 - Original author : [baldera-mods](https://github.com/baldera-mods)
 
 ## Changelog
+### 1.21
+- Rolled back code
 ### 1.2
 - Fixed error
 ### 1.1
