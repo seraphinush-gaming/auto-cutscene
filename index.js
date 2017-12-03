@@ -2,7 +2,7 @@
 // - C_END_MOVIE
 // - S_PLAY_MOVIE
 
-// Version 1.21 r:00
+// Version 1.22 r:01
 
 module.exports = function SkipCutscene(d) {
 
@@ -31,10 +31,12 @@ module.exports = function SkipCutscene(d) {
 
 	// code
 	d.hook('S_PLAY_MOVIE', (e) => {
-		if (enable) {
-			//console.log(`[skip-cutscene] : Video id : ` + event.movie)
-			d.toServer('C_END_MOVIE', Object.assign({ unk: true }, e))
-		}
+		if (!enable) return
+		d.toServer('C_END_MOVIE', {
+			movie: e.movie,
+			unk: 1
+		})
+		return false
 	})
 
 }
