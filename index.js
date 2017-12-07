@@ -2,11 +2,21 @@
 // - C_END_MOVIE
 // - S_PLAY_MOVIE
 
-// Version 1.22 r:01
+// Version 1.22 r:02
 
 module.exports = function SkipCutscene(d) {
 
 	let enable = true
+
+	// code
+	d.hook('S_PLAY_MOVIE', (e) => {
+		if (!enable) return
+		d.toServer('C_END_MOVIE', {
+			movie: e.movie,
+			unk: 1
+		})
+		return false
+	})
 
 	// command
 	try {
@@ -28,15 +38,5 @@ module.exports = function SkipCutscene(d) {
 	} catch (e) {
 		console.log(`[ERROR] -- Skip Cutscene module --`)
 	}
-
-	// code
-	d.hook('S_PLAY_MOVIE', (e) => {
-		if (!enable) return
-		d.toServer('C_END_MOVIE', {
-			movie: e.movie,
-			unk: 1
-		})
-		return false
-	})
 
 }
