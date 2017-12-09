@@ -2,7 +2,7 @@
 // - C_END_MOVIE
 // - S_PLAY_MOVIE
 
-// Version 1.22 r:02
+// Version 1.23 r:00
 
 module.exports = function SkipCutscene(d) {
 
@@ -32,11 +32,7 @@ module.exports = function SkipCutscene(d) {
 			enable = !enable
 			send(`${enable ? '<font color="#56B4E9">실행</font>' : '<font color="#E69F00">중지</font>'}<font>되었습니다.</font>`)
 		})
-		function send(msg) {
-			command.message(`[skip-cutscene] : ` + msg)
-		}
-	} catch (e) {
-		console.log(`[ERROR] -- Skip Cutscene module --`)
-	}
+		function send(msg) { command.message(`[skip-cutscene] : ` + msg) }
+	} catch (e) { console.log(`[ERROR] -- Skip Cutscene module --`) }
 
 }
