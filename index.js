@@ -2,7 +2,7 @@
 // - C_END_MOVIE
 // - S_PLAY_MOVIE
 
-// Version 1.23 r:00
+// Version 1.24 r:00
 
 module.exports = function SkipCutscene(d) {
 
@@ -25,14 +25,17 @@ module.exports = function SkipCutscene(d) {
 		// NA
 		command.add('skip', () => {
 			enable = !enable
-			send(`${enable ? '<font color="#56B4E9">enabled</font>' : '<font color="#E69F00">disabled</font>'}<font>.</font>`)
+			send(`${enable ? 'enabled'.clr('56B4E9') : 'disabled'.clr('E69F00')}` + `.`.clr('FFFFFF'))
 		})
 		// KR
 		command.add('스킵', () => {
 			enable = !enable
-			send(`${enable ? '<font color="#56B4E9">실행</font>' : '<font color="#E69F00">중지</font>'}<font>되었습니다.</font>`)
+			send(`${enable ? '실행되었습니다'.clr('56B4E9') : '중지되었습니다'.clr('E69F00')}` + `.`.clr('FFFFFF'))
 		})
 		function send(msg) { command.message(`[skip-cutscene] : ` + msg) }
 	} catch (e) { console.log(`[ERROR] -- Skip Cutscene module --`) }
 
 }
+
+// For a certain color OCD baka. ex: 'seraphinudez'.clr('BADA55')
+String.prototype.clr = function (hexColor) { return `<font color="#${hexColor}">${this}` }
