@@ -2,7 +2,7 @@
 // - C_END_MOVIE
 // - S_PLAY_MOVIE
 
-// Version 1.27 r:01
+// Version 1.27 r:02
 
 module.exports = function AutoCutscene(d) {
 
@@ -19,6 +19,7 @@ module.exports = function AutoCutscene(d) {
 	try {
 		const Command = require('command')
 		const command = Command(d)
+		// toggle
 		command.add('skip', () => {
 			enable = !enable
 			send(`${enable ? 'enabled'.clr('56B4E9') : 'disabled'.clr('E69F00')}` + `.`.clr('FFFFFF'))
