@@ -2,7 +2,7 @@
 // - C_END_MOVIE
 // - S_PLAY_MOVIE
 
-// Version 1.27 r:02
+// Version 1.27 r:03
 
 module.exports = function AutoCutscene(d) {
 
@@ -11,7 +11,7 @@ module.exports = function AutoCutscene(d) {
 	// code
 	d.hook('S_PLAY_MOVIE', (e) => {
 		if (!enable) return
-		d.toServer('C_END_MOVIE', Object.assign({ unk : 1}, e))
+		d.toServer('C_END_MOVIE', Object.assign({ unk : 1 }, e))
 		return false
 	})
 
