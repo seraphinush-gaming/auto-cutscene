@@ -1,12 +1,15 @@
-// OPCODE REQUIRED :
-// - C_END_MOVIE
-// - S_PLAY_MOVIE
+// Version 1.28 r:00
 
-// Version 1.27 r:03
+const Command = require('command')
+const config = require('./config.json')
+
+// credit : https://github.com/Some-AV-Popo
+String.prototype.clr = function (hexColor) { return `<font color="#${hexColor}">${this}` }
 
 module.exports = function AutoCutscene(d) {
+	const command = Command(d)
 
-	let enable = true
+	let enable = config.enable
 
 	// code
 	d.hook('S_PLAY_MOVIE', (e) => {
@@ -16,18 +19,11 @@ module.exports = function AutoCutscene(d) {
 	})
 
 	// command
-	try {
-		const Command = require('command')
-		const command = Command(d)
-		// toggle
-		command.add('skip', () => {
-			enable = !enable
-			send(`${enable ? 'enabled'.clr('56B4E9') : 'disabled'.clr('E69F00')}` + `.`.clr('FFFFFF'))
-		})
-		function send(msg) { command.message(`[auto-cutscene] : ` + [...arguments].join('\n\t - ')) }
-	} catch (e) { console.log(`[ERROR] -- auto-cutscene module --`) }
+	// toggle
+	command.add('skip', () => {
+		enable = !enable
+		send(`${enable ? 'Enabled'.clr('56B4E9') : 'Disabled'.clr('E69F00')}`)
+	})
+	function send(msg) { command.message(`[auto-cutscene] : ` + msg) }
 
 }
-
-// credit : https://github.com/Some-AV-Popo
-String.prototype.clr = function (hexColor) { return `<font color="#${hexColor}">${this}` }
