@@ -15,6 +15,8 @@ tera-proxy module to automatically skip cutscenes
 ## Changelog
 <details>
   
+    1.28
+    - Added auto-update support
     1.27
     - Updated name and font color
     1.26
