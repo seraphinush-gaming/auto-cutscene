@@ -1,14 +1,14 @@
 {
-  "files": {
-      "config.json": {
-          "overwrite": false,
-          "hash": "4884e0622aa6aa79f5c27b43531c8b0aa4558a78e1bb0f49780734e0dc571b07"
-        },
-      "index.js": "6d9de2d871cf97057c8052db7a4bc0a23151736dc44dea2ebe7f1aeebae290a7",
-      "module.json": "7cf45c8e261f09fdac113326a364e2884acc3c5734931c262d3f1ddb1780120d"
-  },
-  "defs": {
-      "C_END_MOVIE": 1,
-      "S_PLAY_MOVIE": 1
+    "files": {
+        "config.json": {
+            "overwrite": false,
+            "hash": "4884e0622aa6aa79f5c27b43531c8b0aa4558a78e1bb0f49780734e0dc571b07"
+          },
+        "index.js": "bc25022a5efc3617a7e5920f5255405981fcb45edf80ffb587ce6d8d19593ee8",
+        "module.json": "7cf45c8e261f09fdac113326a364e2884acc3c5734931c262d3f1ddb1780120d"
+    },
+    "defs": {
+        "C_END_MOVIE": 1,
+        "S_PLAY_MOVIE": 1
+    }
   }
-}
