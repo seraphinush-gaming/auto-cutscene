@@ -1,4 +1,4 @@
-// Version 1.28 r:03
+// Version 1.28 r:04
 
 const Command = require('command')
 const config = require('./config.json')
@@ -12,7 +12,7 @@ module.exports = function AutoCutscene(d) {
 	let enable = config.enable
 
 	// code
-	d.hook('S_PLAY_MOVIE', (e) => {
+	d.hook('S_PLAY_MOVIE', 1, (e) => {
 		if (!enable) return
 		d.send('C_END_MOVIE', 1, Object.assign({ unk : 1 }, e))
 		return false
