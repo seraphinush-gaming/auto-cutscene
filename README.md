@@ -19,7 +19,9 @@ tera-proxy module to automatically skip cutscenes
 
 ## Changelog
 <details>
-  
+
+    1.29
+    - Removed font color bloat
     1.28
     - Added auto-update support
     - Refactored config file
