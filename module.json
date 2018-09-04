@@ -1,4 +1,6 @@
 {
+    "disableAutoUpdate": false,
+    "options": { "niceName": "auto-cutscene" },
     "servers": ["https://raw.githubusercontent.com/seraphinush-gaming/auto-cutscene/master/"],
     "supportUrl": "https://github.com/seraphinush-gaming/auto-cutscene/issues"
 }

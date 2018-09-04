@@ -2,7 +2,7 @@
 tera-proxy module to automatically skip cutscenes
 
 ## Dependency
-- `Command` module
+- `command` module
 
 ## Usage
 - __`skip`__
@@ -20,6 +20,9 @@ tera-proxy module to automatically skip cutscenes
 ## Changelog
 <details>
 
+    1.30
+    - Removed `command` require()
+    - Updated to `mod.command`
     1.29
     - Removed font color bloat
     1.28
