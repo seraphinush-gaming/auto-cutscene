@@ -1,6 +1,0 @@
-{
-    "disableAutoUpdate": false,
-    "options": { "niceName": "auto-cutscene" },
-    "servers": ["https://raw.githubusercontent.com/sylennia-archives/auto-cutscene/master/"],
-    "supportUrl": "https://github.com/ylennia-archives/auto-cutscene/issues"
-}
