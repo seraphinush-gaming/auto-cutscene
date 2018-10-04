@@ -3,7 +3,7 @@
 const config = require('./config.json');
 
 module.exports = function AutoCutscene(m) {
-	const cmd = m.command || m.require.command
+	const cmd = m.command || m.require.command;
 
 	// config
 	let enable = config.enable;
@@ -13,7 +13,7 @@ module.exports = function AutoCutscene(m) {
 	cmd.add('skip', {
 		$none() {
 			enable = !enable;
-			send(`${enable ? 'Enabled' : 'Disabled'}`);
+			send(`${enable ? 'En' : 'Dis'}abled`);
 		}
 	});
 

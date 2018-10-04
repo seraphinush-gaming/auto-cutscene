@@ -1,9 +1,12 @@
 {
 	"files": {
-		"README.md": "8ab16458186dab1a7f428aaaafac128cf30841545fd46f48ef7c818ea3c80d6a",
-		"config.json": "11e7ca8722b88776ccfed5d2c1afdd6cdc320d9a3f217ee571976e359262fa63",
-		"index.js": "c20844f8325c2af77ff15d539117d65efeb008313b221f81331edc9e6d6bc104",
-		"module.json": "daea4b59cfb6816585d4d7fc55ca95b238c183da3b28d91566f5c87f73f99ce8"
+		"README.md": "a8399a6292cd19f430933678aee0c69af3b88792c2222d085961e40a7eead596",
+		"config.json": {
+			"overwrite": false,
+			"hash": "11e7ca8722b88776ccfed5d2c1afdd6cdc320d9a3f217ee571976e359262fa63"
+		},
+		"index.js": "f8935b505775111ffa683dc89bf25db80b88b06334e9d98596883f5dde6dc7ea",
+		"module.json": "735d31d54c478d46b555322f83918047be9e8a55a7bea0b15df92695dc50a25b"
 	},
 	"defs": {
 		"C_END_MOVIE": 1,

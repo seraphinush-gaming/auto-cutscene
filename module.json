@@ -1,5 +1,5 @@
 {
 	"disableAutoUpdate": false,
     "options": { "niceName": "auto-cutscene" },
-	"server": ["https://raw.githubusercontent.com/ylennia-archives/auto-cutscene/master/"]
+	"servers": ["https://raw.githubusercontent.com/ylennia-archives/auto-cutscene/master/"]
 }
