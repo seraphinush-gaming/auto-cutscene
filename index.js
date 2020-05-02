@@ -10,7 +10,7 @@ class auto_cutscene {
     mod.command.add('skip', {
       '$default': () => {
         mod.settings.enable = !mod.settings.enable;
-        this.send(`${mod.settings.enable ? 'En' : 'Dis'}abled`)
+        this.send(`${mod.settings.enable ? 'En' : 'Dis'}abled`);
       }
     });
 
