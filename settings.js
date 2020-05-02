@@ -1,7 +1,7 @@
 'use strict';
 
 const DefaultSettings = {
-  "enable": true
+  "enable": false
 }
 
 function MigrateSettings(from_ver, to_ver, settings) {
