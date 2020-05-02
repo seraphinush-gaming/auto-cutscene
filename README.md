@@ -1,28 +1,30 @@
-# auto-cutscene
-tera-proxy module to automatically skip cutscenes
+<p align="center">
+<a href="https://discord.gg/dUNDDtw">
+<img src="https://github.com/seraphinush-gaming/pastebin/blob/master/logo_ttb_trans.png?raw=true" width="200" height="200" alt="tera-toolbox, logo by Foglio" />
+</a>
+</p>
+
+# auto-cutscene [![paypal](https://img.shields.io/badge/paypal-donate-333333.svg?colorA=253B80&colorB=333333)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B7QQJZV9L5P2J&source=url) [![paypal.me](https://img.shields.io/badge/paypal.me-donate-333333.svg?colorA=169BD7&colorB=333333)](https://www.paypal.me/seraphinush) 
+tera-toolbox module to automatically skip cutscenes
+```
+Support seraph via paypal donations, thanks in advance !
+```
 
 ## Auto-update guide
-- Create a folder called `auto-cutscene` in `tera-proxy/bin/node_modules` and download [`module.json`](https://raw.githubusercontent.com/ylennia-archives/auto-cutscene/master/module.json) (right-click save link as...) into the folder
-
-## Dependency
-- `command` module
+- Create a folder called `auto-cutscene` in `tera-toolbox/mods` and download >> [`module.json`](https://raw.githubusercontent.com/seraphinush-gaming/auto-cutscene/master/module.json) << (right-click this link and save link as..) into the folder
 
 ## Usage
 - __`skip`__
   - Toggle on/off
 
-## Config
-- __`enable`__
-  - Initialize module on/off
-  - Default is `true`
-
 ## Info
 - Original author : [baldera-mods](https://github.com/baldera-mods)
-- **Support seraph via paypal donations, thanks in advance : [paypal](https://www.paypal.me/seraphinush)**
 
 ## Changelog
 <details>
 
+    1.31
+    - Updated to latest toolbox settings
     1.30
     - Removed `command` require()
     - Updated to `mod.command`

@@ -1,30 +1,35 @@
-// Version 1.30 r:00
+'use strict';
 
-const config = require('./config.json');
+class auto_cutscene {
 
-module.exports = function AutoCutscene(m) {
-	const cmd = m.command || m.require.command;
+  constructor(mod) {
 
-	// config
-	let enable = config.enable;
+		this.m = mod;
+		this.c = mod.command;
+		this.s = mod.settings;
 
-	// command
-	// toggle
-	cmd.add('skip', {
-		$none() {
-			enable = !enable;
-			send(`${enable ? 'En' : 'Dis'}abled`);
-		}
-	});
+		// command
+		this.c.add('skip', {
+			'$default': () => {
+				this.s.enable = !this.s.enable;
+				this.send(`${this.s.enable ? 'En' : 'Dis'}abled`)
+			}
+		});
 
-	// code
-	m.hook('S_PLAY_MOVIE', 1, (e) => {
-		if (!enable) return
-		m.send('C_END_MOVIE', 1, Object.assign({ unk : 1 }, e));
-		return false
-	});
+		// code
+    this.m.hook('S_PLAY_MOVIE', 1, (e) => {
+      if (this.s.enable) {
+        this.m.send('C_END_MOVIE', 1, Object.assign({ unk: 1 }, e));
+        return false;
+      }
+    });
 
-	// helper
-	function send(msg) { cmd.message(`: ` + msg); }
+  }
+
+	destructor() {}
+	
+	send(msg) { this.c.message(': ' + msg); }
 
 }
+
+module.exports = auto_cutscene;

@@ -1,15 +1,8 @@
 {
-	"files": {
-		"README.md": "a8399a6292cd19f430933678aee0c69af3b88792c2222d085961e40a7eead596",
-		"config.json": {
-			"overwrite": false,
-			"hash": "11e7ca8722b88776ccfed5d2c1afdd6cdc320d9a3f217ee571976e359262fa63"
-		},
-		"index.js": "f8935b505775111ffa683dc89bf25db80b88b06334e9d98596883f5dde6dc7ea",
-		"module.json": "735d31d54c478d46b555322f83918047be9e8a55a7bea0b15df92695dc50a25b"
-	},
-	"defs": {
-		"C_END_MOVIE": 1,
-		"S_PLAY_MOVIE": 1
-	}
+  "files": {
+    "README.md": "83a310119f560499b5bd7cc88278c3d51ec5ac5953da7c8ec0bf189f6b9d0eef",
+    "index.js": "9fb5a6868626a9995ee4b1c2c23d4a8e55ec219c9426da85391dd8c0f68c2a25",
+    "module.json": "9ca31a89a410a70945ad2baadca21ae8f86243de2534b000364339f34eb5e903",
+    "settings.js": "a181338584965e6a36f188f3d1b0c10b18808e98bd45a981cfd68f8a11a5ea09"
+  }
 }

@@ -1,5 +1,17 @@
 {
-	"disableAutoUpdate": false,
-    "options": { "niceName": "auto-cutscene" },
-	"servers": ["https://raw.githubusercontent.com/ylennia-archives/auto-cutscene/master/"]
+  "author": "seraphinush . baldera-mods",
+  "conflict": ["auto-qol","skip-cutscene"],
+  "description": "tera-toolbox module to automatically skip cutscenes",
+  "disableAutoUpdate": false,
+  "donationUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B7QQJZV9L5P2J&source=url",
+  "name": "auto-cutscene",
+  "options": {
+    "reloadable": true,
+    "settingsVersion": 1,
+    "settingsFile": "config.json",
+    "settingsMigrator": "settings.js"
+  },
+  "servers": ["https://raw.githubusercontent.com/seraphinush-gaming/auto-cutscene/master/"],
+  "supportUrl": "https://github.com/seraphinush-gaming/auto-cutscene/blob/master/README.md",
+  "version": "1.31.00"
 }
