@@ -4,22 +4,20 @@ class auto_cutscene {
 
   constructor(mod) {
 
-    this.m = mod;
     this.c = mod.command;
-    this.s = mod.settings;
 
     // command
-    this.c.add('skip', {
+    mod.command.add('skip', {
       '$default': () => {
-        this.s.enable = !this.s.enable;
-        this.send(`${this.s.enable ? 'En' : 'Dis'}abled`)
+        mod.settings.enable = !mod.settings.enable;
+        this.send(`${mod.settings.enable ? 'En' : 'Dis'}abled`)
       }
     });
 
     // code
-    this.m.hook('S_PLAY_MOVIE', 1, (e) => {
-      if (this.s.enable) {
-        this.m.send('C_END_MOVIE', 1, Object.assign({ unk: 1 }, e));
+    mod.hook('S_PLAY_MOVIE', 1, (e) => {
+      if (mod.settings.enable) {
+        this.send('C_END_MOVIE', 1, Object.assign({ unk: 1 }, e));
         return false;
       }
     });
