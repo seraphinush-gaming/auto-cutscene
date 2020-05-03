@@ -23,33 +23,33 @@ Support seraph via paypal donations, thanks in advance !
 ## Changelog
 <details>
 
-    1.31
+    1.1f
     - Updated to latest toolbox settings
-    1.30
+    1.1e
     - Removed `command` require()
     - Updated to `mod.command`
-    1.29
+    1.1d
     - Removed font color bloat
-    1.28
+    1.1c
     - Added auto-update support
     - Refactored config file
     -- Added `enable`
-    1.27
+    1.1b
     - Updated name and font color
-    1.26
+    1.1a
     - Updated code aesthetics
-    1.24
+    1.18
     - Updated code
     - Added string function
-    1.23
+    1.17
     - Updated code aesthetics
-    1.22
+    1.16
     - Updated code aesthetics
-    1.21
+    1.15
     - Rolled back code
-    1.20
+    1.14
     - Fixed error
-    1.10
+    1.0a
     - Updated code
     1.00
     - Initial fork

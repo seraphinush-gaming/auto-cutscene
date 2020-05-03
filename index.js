@@ -4,7 +4,7 @@ class auto_cutscene {
 
   constructor(mod) {
 
-    this.c = mod.command;
+    this.command = mod.command;
 
     // command
     mod.command.add('skip', {
@@ -17,16 +17,18 @@ class auto_cutscene {
     // code
     mod.hook('S_PLAY_MOVIE', 1, (e) => {
       if (mod.settings.enable) {
-        this.send('C_END_MOVIE', 1, Object.assign({ unk: 1 }, e));
+        mod.send('C_END_MOVIE', 1, Object.assign({ unk: 1 }, e));
         return false;
       }
     });
 
   }
 
-  destructor() {}
-  
-  send(msg) { this.c.message(': ' + msg); }
+  destructor() {
+    this.command.remove('skip');
+  }
+
+  send(msg) { this.command.message(': ' + msg); }
 
 }
 
