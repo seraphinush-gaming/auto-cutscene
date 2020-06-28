@@ -3,7 +3,7 @@
   "conflict": ["auto-qol","skip-cutscene"],
   "description": "tera-toolbox module to automatically skip cutscenes",
   "disableAutoUpdate": false,
-  "donationUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B7QQJZV9L5P2J&source=url",
+  "donationUrl": "https://www.paypal.me/seraphinush",
   "name": "auto-cutscene",
   "options": {
     "reloadable": true,
@@ -13,5 +13,5 @@
   },
   "servers": ["https://raw.githubusercontent.com/seraphinush-gaming/auto-cutscene/master/"],
   "supportUrl": "https://github.com/seraphinush-gaming/auto-cutscene/blob/master/README.md",
-  "version": "1.1f.05"
+  "version": "1.1f.06.v95.04"
 }
