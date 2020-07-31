@@ -32,4 +32,4 @@ class auto_cutscene {
 
 }
 
-module.exports = auto_cutscene;
+module.exports = { NetworkMod: auto_cutscene };
