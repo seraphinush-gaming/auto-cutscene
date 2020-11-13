@@ -1,8 +1,12 @@
 {
-  "files": {
-    "README.md": "afbb5cf720c1d96bf2988736a6b4079f8f4a070e0bc95fa0036255681bde4384",
-    "index.js": "48bca1b76e0088176ed29d9b2d9a8b5dea792601f528010593196b564b1c2500",
-    "module.json": "38b7a59e812c20764833598ae57c75760ee0c4319c9235d2489305dd99aa09ae",
-    "settings.js": "b6fe7dff2b967a90b1cfc0cb5aa2f816358d7616b24eb523abbcb63f73058015"
-  }
+	"files": {
+		"README.md": "afbb5cf720c1d96bf2988736a6b4079f8f4a070e0bc95fa0036255681bde4384",
+		"index.js": "48bca1b76e0088176ed29d9b2d9a8b5dea792601f528010593196b564b1c2500",
+		"module.json": "9c190f095d159cefe9085efcc924ec77f65c74164dbbca2997cd154d70cea7d1",
+		"settings.js": "b6fe7dff2b967a90b1cfc0cb5aa2f816358d7616b24eb523abbcb63f73058015"
+	},
+	"defs": {
+		"C_END_MOVIE": 1,
+		"S_PLAY_MOVIE": 1
+	}
 }
