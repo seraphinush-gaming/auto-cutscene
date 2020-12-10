@@ -14,6 +14,13 @@ class auto_cutscene {
       }
     });
 
+    mod.command.add('cutscene', (num) => {
+      if (num && !isNaN(num)) {
+        mod.send('S_PLAY_MOVIE', 1, { movie: num });
+        this.send(`Attempted to play cutscene ${num}`);
+      }
+    });
+
     // code
     mod.hook('S_PLAY_MOVIE', 1, (e) => {
       if (mod.settings.enable) {
@@ -26,6 +33,7 @@ class auto_cutscene {
 
   destructor() {
     this.command.remove('skip');
+    this.command.remove('cutscene');
   }
 
   send(msg) { this.command.message(': ' + msg); }

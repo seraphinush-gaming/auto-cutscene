@@ -12,12 +12,17 @@ tera-toolbox module to automatically skip cutscenes
 - __`skip`__
   - Toggle on/off
 
+- __`cutscene <num>`__
+  - Play cutscene `<num>`
+
 ## Info
 - Original author : [baldera-mods](https://github.com/baldera-mods)
 
 ## Changelog
 <details>
 
+    1.20
+    - Added `cutscene` command
     1.1f
     - Updated to latest toolbox settings
     1.1e
