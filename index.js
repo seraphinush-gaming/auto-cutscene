@@ -14,10 +14,12 @@ class auto_cutscene {
       }
     });
 
-    mod.command.add('cutscene', (num) => {
-      if (num && !isNaN(num)) {
-        mod.send('S_PLAY_MOVIE', 1, { movie: num });
-        this.send(`Attempted to play cutscene ${num}`);
+    mod.command.add('cutscene', {
+      '$default': (num) => {
+        if (num && !isNaN(num)) {
+          mod.send('S_PLAY_MOVIE', 1, { movie: num });
+          this.send(`Attempted to play cutscene ${num}`);
+        }
       }
     });
 
