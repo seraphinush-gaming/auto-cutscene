@@ -11,7 +11,7 @@
     "settingsFile": "config.json",
     "settingsMigrator": "settings.js"
   },
-  "servers": ["https://raw.githubusercontent.com/seraphinush-gaming/auto-cutscene/master/"],
-  "supportUrl": "https://github.com/seraphinush-gaming/auto-cutscene/blob/master/README.md",
-  "version": "1.20.03.v105.02"
+  "servers": ["https://raw.githubusercontent.com/ylennia-archives/auto-cutscene/master/"],
+  "supportUrl": "https://github.com/ylennia-archives/auto-cutscene/blob/master/README.md",
+  "version": "1.20.04.v105.02"
 }
