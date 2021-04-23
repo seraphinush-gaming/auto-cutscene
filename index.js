@@ -6,6 +6,9 @@ class auto_cutscene {
 
     this.command = mod.command;
 
+    if (mod.majorPatchVersion >= 105)
+      return mod.warn('Deprecated. please refer to the in-game option to toggle cutscene.');
+
     // command
     mod.command.add('skip', {
       '$default': () => {
