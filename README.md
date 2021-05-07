@@ -26,6 +26,8 @@ tera-toolbox module to automatically skip cutscenes
 ## Changelog
 <details>
 
+    1.21
+    - Deprecated
     1.20
     - Added `cutscene` command
     1.1f
